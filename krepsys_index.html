@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Современные крепёжные системы — крепёж и метизы оптом в Пензе</title>
+<meta name="description" content="Крепёж, метизы и строительный инструмент оптом и в розницу в Пензе. 3 магазина, 10 000+ позиций, бесплатная доставка по городу. Работаем с 2005 года."/>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: {
+      "primary": "#af101a",
+      "primary-container": "#d32f2f",
+      "on-primary": "#ffffff",
+      "surface": "#f9f9f9",
+      "surface-container": "#eeeeee",
+      "surface-container-highest": "#e2e2e2",
+      "on-surface": "#1a1c1c",
+      "secondary": "#4c616c",
+      "inverse-surface": "#2f3131",
+      "inverse-on-surface": "#f1f1f1"
+    },
+    borderRadius: { "DEFAULT":"0px","lg":"0px","xl":"0px","full":"9999px" },
+    fontFamily: { "sans":["Inter","sans-serif"] }
+  }}
+}
+</script>
+
+<style>
+  /* ── Base ── */
+  *, *::before, *::after { box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; margin: 0; background: #f9f9f9; color: #1a1c1c; }
+  .material-symbols-outlined { font-family: 'Material Symbols Outlined'; font-style: normal; font-weight: normal; line-height: 1; display: inline-block; color: #af101a; vertical-align: middle; }
+
+  /* ── Nav links ── */
+  .nav-link {
+    padding: 6px 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: -0.03em; font-size: 11px; color: #4c616c;
+    background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent;
+    transition: color .15s, border-color .15s;
+  }
+  .nav-link:hover { color: #af101a; }
+  .nav-link.active { color: #af101a; border-bottom: 2px solid #af101a; }
+
+  /* ── CTA Buttons ── */
+  .btn-cta {
+    background: #af101a; color: #fff; font-weight: 900; text-transform: uppercase;
+    letter-spacing: 0.12em; border: 2px solid #af101a; cursor: pointer;
+    border-radius: 0; transition: all .15s ease; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-cta:hover { background: #d32f2f; border-color: #d32f2f; }
+  .btn-cta:active { background: #fff; color: #af101a; }
+
+  .btn-cta-secondary {
+    background: #e2e2e2; color: #1a1c1c; font-weight: 900; text-transform: uppercase;
+    letter-spacing: 0.12em; border: 2px solid #e2e2e2; cursor: pointer;
+    border-radius: 0; transition: all .15s ease;
+  }
+  .btn-cta-secondary:hover { background: #d0d0d0; }
+  .btn-cta-secondary:active { background: #1a1c1c; color: #e2e2e2; }
+
+  /* ── Cards with glass hover ── */
+  .card-glass {
+    transition: transform .3s cubic-bezier(.25,.46,.45,.94), box-shadow .3s, background .3s, border-color .3s;
+  }
+  .card-glass:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.85) !important;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-color: rgba(175,16,26,0.3) !important;
+    box-shadow: 0 12px 32px rgba(175,16,26,0.12);
+  }
+  .card-glass-dark {
+    transition: transform .3s cubic-bezier(.25,.46,.45,.94), box-shadow .3s, background .3s;
+  }
+  .card-glass-dark:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.1) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 12px 32px rgba(175,16,26,0.2);
+  }
+
+  /* ── Product cards ── */
+  .product-card {
+    transition: transform .3s ease, box-shadow .3s ease;
+    cursor: default;
+  }
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(175,16,26,0.12);
+  }
+
+  /* ── Hero fade-in animations ── */
+  .fade-in-up { opacity: 0; transform: translateY(28px); animation: fadeInUp .7s ease forwards; }
+  .fade-in-up-1 { animation-delay: .2s; }
+  .fade-in-up-2 { animation-delay: .4s; }
+  .fade-in-up-3 { animation-delay: .6s; }
+  .fade-in-up-4 { animation-delay: .8s; }
+  .fade-in-up-5 { animation-delay: 1s; }
+  @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+  /* ── Horizontal FAQ accordion ── */
+  .h-accordion { display: flex; height: 300px; border: 1px solid #e2e2e2; overflow: hidden; }
+  .h-acc-item {
+    flex: 1; overflow: hidden; cursor: pointer;
+    border-right: 1px solid #e2e2e2; background: #eeeeee;
+    transition: flex .4s ease, background .3s ease;
+    display: flex; flex-direction: column;
+  }
+  .h-acc-item:last-child { border-right: none; }
+  .h-acc-item.active { flex: 3.5; background: #fff; border-left: 4px solid #af101a; }
+  .h-acc-item .question {
+    writing-mode: vertical-rl; transform: rotate(180deg);
+    padding: 20px 14px; font-weight: 700; font-size: 12px;
+    text-transform: uppercase; letter-spacing: .05em;
+    color: #af101a; white-space: nowrap;
+    flex-shrink: 0; align-self: flex-start;
+  }
+  .h-acc-item.active .question {
+    writing-mode: horizontal-tb; transform: none;
+    padding: 20px 20px 8px; font-size: 13px;
+  }
+  .h-acc-item .answer { display: none; padding: 0 20px 20px; font-size: 13px; color: #4c616c; line-height: 1.6; }
+  .h-acc-item.active .answer { display: block; }
+  @media (max-width: 767px) {
+    .h-accordion { flex-direction: column; height: auto; }
+    .h-acc-item { min-height: 48px; }
+    .h-acc-item .question { writing-mode: horizontal-tb; transform: none; padding: 14px 16px; }
+    .h-acc-item.active { flex: none; }
+  }
+
+  /* ── Partners marquee ── */
+  .partners-marquee-wrap { overflow: hidden; }
+  .partners-marquee {
+    display: flex; gap: 64px; align-items: center;
+    animation: marquee 30s linear infinite; width: max-content;
+  }
+  .partners-marquee:hover { animation-play-state: paused; }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* ── Full-screen modal ── */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 1000;
+    background: #f9f9f9; overflow-y: auto;
+    animation: modalIn .2s ease;
+  }
+  @keyframes modalIn { from { opacity: 0; } to { opacity: 1; } }
+
+  /* ── Small popup modal ── */
+  .popup-overlay {
+    position: fixed; inset: 0; z-index: 1100;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .popup-backdrop { position: absolute; inset: 0; background: rgba(26,28,28,0.88); }
+  .popup-box {
+    position: relative; background: #f9f9f9;
+    max-width: 480px; width: calc(100% - 32px);
+    border-top: 4px solid #af101a; padding: 32px;
+    animation: popupIn .2s cubic-bezier(.34,1.56,.64,1);
+  }
+  @keyframes popupIn { from { opacity:0; transform:scale(.97); } to { opacity:1; transform:scale(1); } }
+
+  /* ── Phone input ── */
+  .phone-input-wrapper { display: flex; }
+  .phone-input-wrapper select {
+    width: 96px; flex-shrink: 0; border: none; border-bottom: 2px solid #4c616c;
+    background: #eeeeee; padding: 12px 8px; font-size: 13px; color: #1a1c1c;
+    border-radius: 0; cursor: pointer; outline: none;
+  }
+  .phone-input-wrapper input {
+    flex: 1; border: none; border-bottom: 2px solid #4c616c;
+    background: #eeeeee; padding: 12px 16px; font-size: 13px; color: #1a1c1c;
+    border-radius: 0; outline: none;
+  }
+  .phone-input-wrapper.error select,
+  .phone-input-wrapper.error input { border-bottom-color: #af101a; }
+
+  /* ── Form inputs ── */
+  .form-input {
+    width: 100%; background: #eeeeee; border: none; border-bottom: 2px solid #4c616c;
+    padding: 14px 16px; font-size: 14px; color: #1a1c1c; border-radius: 0; outline: none;
+    font-family: 'Inter', sans-serif;
+  }
+  .form-input:focus { border-bottom-color: #af101a; }
+  textarea.form-input { resize: none; height: 96px; }
+
+  /* ── Search dropdown ── */
+  #search-dropdown {
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 100; max-height: 256px; overflow-y: auto;
+    border: 1px solid #e2e2e2;
+  }
+  .search-result-item {
+    width: 100%; text-align: left; padding: 12px 24px;
+    display: flex; gap: 16px; align-items: center; font-size: 13px;
+    background: none; border: none; cursor: pointer;
+    transition: background .1s;
+  }
+  .search-result-item:hover { background: #f9f9f9; }
+
+  /* ── Wholesale table ── */
+  .w-table { width: 100%; border-collapse: collapse; }
+  .w-table th { background: #eeeeee; padding: 14px 16px; text-align: left; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; border: 1px solid #e2e2e2; }
+  .w-table td { padding: 14px 16px; border: 1px solid #e2e2e2; font-size: 13px; color: #4c616c; }
+
+  /* ── Misc ── */
+  a { text-decoration: none; }
+  button { font-family: inherit; }
+  input[type="checkbox"] { accent-color: #af101a; }
+
+  /* ── Mobile bar safe area ── */
+  @media (max-width: 767px) { body { padding-bottom: 64px; } }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     HEADER / NAV
+═══════════════════════════════════════════════ -->
+<nav class="sticky top-0 z-50 bg-white" style="border-bottom:4px solid #e2e2e2;">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between py-2 gap-2 lg:gap-4 flex-wrap">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2 shrink-0">
+      <!-- Замените src на путь к реальному файлу LOGO.png -->
+      <img src="LOGO.png" alt="Современные крепёжные системы" class="h-12 w-12 object-contain"
+           onerror="this.style.display='none'"/>
+      <span class="hidden lg:block font-extrabold italic text-xs uppercase tracking-tight leading-tight" style="color:#af101a;max-width:140px;">
+        СОВРЕМЕННЫЕ<br/>КРЕПЁЖНЫЕ<br/>СИСТЕМЫ
+      </span>
+    </div>
+
+    <!-- Desktop nav -->
+    <div class="hidden lg:flex items-center gap-1 xl:gap-2 flex-wrap">
+      <button class="nav-link" data-modal="catalog" onclick="openModal('catalog')">КАТАЛОГ</button>
+      <button class="nav-link" data-modal="about"   onclick="openModal('about')">О НАС</button>
+      <button class="nav-link" data-modal="wholesale" onclick="openModal('wholesale')">ОПТОВИКАМ</button>
+      <button class="nav-link" data-modal="fasovka" onclick="openModal('fasovka')">ФАСОВКА КРЕПЕЖА</button>
+      <button class="nav-link" data-modal="contacts" onclick="openModal('contacts')">КОНТАКТЫ</button>
+      <button class="nav-link" data-modal="sales"   onclick="openModal('sales')">АКЦИИ</button>
+      <button class="nav-link" data-modal="faq"     onclick="openModal('faq')">FAQ</button>
+    </div>
+
+    <!-- Contacts in header -->
+    <div class="hidden xl:flex items-center gap-3 text-xs shrink-0">
+      <div class="flex flex-col gap-0.5">
+        <a href="tel:+78412968740" class="font-bold flex items-center gap-1" style="color:#1a1c1c;">
+          <span class="material-symbols-outlined" style="font-size:14px;">phone</span>8 (8412) 96-87-40
+        </a>
+        <a href="tel:+79875014084" class="font-medium flex items-center gap-1" style="color:#4c616c;">
+          <span class="material-symbols-outlined" style="font-size:14px;">smartphone</span>+7 987 501-40-84
+        </a>
+        <a href="mailto:ckc@krepsys.ru" class="font-medium flex items-center gap-1" style="color:#4c616c;">
+          <span class="material-symbols-outlined" style="font-size:14px;">email</span>ckc@krepsys.ru
+        </a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/79875014084" target="_blank" rel="noopener" title="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#af101a"/></svg>
+        </a>
+        <a href="https://t.me/+79875014084" target="_blank" rel="noopener" title="Telegram">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="#af101a"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <button class="btn-cta px-3 lg:px-5 py-2 text-xs shrink-0 whitespace-nowrap" onclick="openOrderPopup()">ОБСУДИТЬ ЗАКАЗ</button>
+
+    <!-- Mobile burger -->
+    <button class="lg:hidden ml-2" onclick="toggleMobileMenu()">
+      <span class="material-symbols-outlined text-3xl" style="color:#af101a;">menu</span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-surface-container-highest px-4 pb-4">
+    <button class="block w-full text-left py-3 nav-link" onclick="openModal('catalog');closeMobileMenu()">КАТАЛОГ</button>
+    <button class="block w-full text-left py-3 nav-link" onclick="openModal('about');closeMobileMenu()">О НАС</button>
+    <button class="block w-full text-left py-3 nav-link" onclick="openModal('wholesale');closeMobileMenu()">ОПТОВИКАМ</button>
+    <button class="block w-full text-left py-3 nav-link" onclick="openModal('fasovka');closeMobileMenu()">ФАСОВКА КРЕПЕЖА</button>
+    <button class="block w-full text-left py-3 nav-link" onclick="openModal('contacts');closeMobileMenu()">КОНТАКТЫ</button>
+    <button class="block w-full text-left py-3 nav-link" onclick="openModal('sales');closeMobileMenu()">АКЦИИ</button>
+    <button class="block w-full text-left py-3 nav-link" onclick="openModal('faq');closeMobileMenu()">FAQ</button>
+    <div class="flex items-center gap-4 pt-3 border-t border-surface-container-highest mt-2">
+      <a href="tel:+78412968740" class="text-sm font-bold" style="color:#1a1c1c;">8 (8412) 96-87-40</a>
+      <a href="mailto:ckc@krepsys.ru" class="text-sm" style="color:#4c616c;">ckc@krepsys.ru</a>
+      <a href="https://wa.me/79875014084" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#af101a"/></svg>
+      </a>
+      <a href="https://t.me/+79875014084" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="#af101a"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Search bar -->
+<div class="sticky z-40 bg-surface border-b border-surface-container-highest" style="top:72px;">
+  <div class="max-w-7xl mx-auto px-4 md:px-12 flex items-center h-11 gap-3 relative">
+    <span class="material-symbols-outlined text-xl">search</span>
+    <input type="text" id="global-search" placeholder="Поиск по наименованию товара..."
+      class="w-full bg-transparent border-0 border-b-2 text-sm py-2 focus:outline-none"
+      style="border-color:#af101a; border-bottom:2px solid #af101a; background:transparent;"
+      oninput="handleSearch(this.value)" autocomplete="off"/>
+    <div id="search-dropdown" style="display:none;"></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 1: HERO
+═══════════════════════════════════════════════ -->
+<section class="relative overflow-hidden" style="min-height:870px; background:#2f3131;">
+  <canvas id="hero-canvas" class="absolute inset-0 w-full h-full" style="z-index:0;"></canvas>
+  <div class="absolute inset-0" style="background:linear-gradient(to right,#2f3131 40%,rgba(47,49,49,.75) 70%,transparent);z-index:1;"></div>
+  <div class="absolute top-0 left-0 w-96 h-96" style="background:radial-gradient(circle,rgba(175,16,26,.22) 0%,transparent 70%);z-index:1;"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32 grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <div class="lg:col-span-8 flex flex-col justify-center">
+      <p class="text-xs font-bold mb-6 fade-in-up fade-in-up-1" style="color:#af101a;letter-spacing:.3em;text-transform:uppercase;">
+        КАТАЛОГ: 10 000+ ПОЗИЦИЙ В НАЛИЧИИ
+      </p>
+      <h1 class="font-black uppercase tracking-tighter leading-none mb-8 fade-in-up fade-in-up-2"
+        style="color:#f1f1f1;font-size:clamp(32px,6vw,80px);">
+        КРЕПЁЖ И <span style="color:#af101a;">МЕТИЗЫ —</span> НАПРЯМУЮ <span style="color:#af101a;">ОТ ПОСТАВЩИКА</span>
+      </h1>
+      <p class="font-medium mb-10 max-w-2xl fade-in-up fade-in-up-3" style="color:#bbc8d0;font-size:clamp(15px,2vw,20px);">
+        Нужный крепёж по ГОСТ и DIN — сегодня. 3 магазина в Пензе.<br/>
+        Работаем со строительными компаниями, производствами и частными мастерами.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-12 fade-in-up fade-in-up-4">
+        <button class="btn-cta px-8 md:px-10 py-4 md:py-5 text-sm" onclick="openModal('catalog')">
+          ОТКРЫТЬ КАТАЛОГ <span class="material-symbols-outlined" style="color:inherit;font-size:18px;">arrow_forward</span>
+        </button>
+        <button class="btn-cta-secondary px-8 md:px-10 py-4 md:py-5 text-sm" onclick="openOrderPopup()">
+          ОБСУДИТЬ ЗАКАЗ
+        </button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 fade-in-up fade-in-up-5">
+        <div class="flex items-center gap-3 px-5 py-4 card-glass-dark"
+          style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-left:3px solid #af101a;">
+          <span class="material-symbols-outlined text-xl">inventory_2</span>
+          <span class="text-sm font-bold uppercase tracking-wide" style="color:#f1f1f1;">21 год на рынке Пензы</span>
+        </div>
+        <div class="flex items-center gap-3 px-5 py-4 card-glass-dark"
+          style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-left:3px solid #af101a;">
+          <span class="material-symbols-outlined text-xl">warehouse</span>
+          <span class="text-sm font-bold uppercase tracking-wide" style="color:#f1f1f1;">10 000+ позиций в наличии</span>
+        </div>
+        <div class="flex items-center gap-3 px-5 py-4 card-glass-dark"
+          style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-left:3px solid #af101a;">
+          <span class="material-symbols-outlined text-xl">local_shipping</span>
+          <span class="text-sm font-bold uppercase tracking-wide" style="color:#f1f1f1;">Доставка по Пензе — бесплатно</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 2: PAIN POINTS
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <h2 class="font-black uppercase tracking-tighter text-on-surface mb-12" style="font-size:clamp(24px,4vw,48px);">
+      ЗНАКОМЫЕ <span style="color:#af101a;">ПРОБЛЕМЫ?</span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card-glass p-8 md:p-12" style="background:#f3f3f3;border-left:4px solid #e2e2e2;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">error</span>
+        <h3 class="font-black uppercase tracking-tighter text-on-surface text-lg mb-3">ПОСТАВЩИК ПОДВЁЛ, А ОБЪЕКТ СТОИТ</h3>
+        <p class="text-secondary text-sm">Обещали — не привезли. Стройка встала, деньги теряются каждый час.</p>
+      </div>
+      <div class="card-glass p-8 md:p-12" style="background:#f3f3f3;border-left:4px solid #e2e2e2;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">store</span>
+        <h3 class="font-black uppercase tracking-tighter text-on-surface text-lg mb-3">ЕЗДИШЬ ПО МАГАЗИНАМ</h3>
+        <p class="text-secondary text-sm">Саморезы — здесь, анкеры — там, химия — в другом конце города.</p>
+      </div>
+      <div class="card-glass p-8 md:p-12" style="background:#f3f3f3;border-left:4px solid #e2e2e2;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">trending_up</span>
+        <h3 class="font-black uppercase tracking-tighter text-on-surface text-lg mb-3">ЦЕНЫ СКАЧУТ, БЮДЖЕТ НЕ СХОДИТСЯ</h3>
+        <p class="text-secondary text-sm">Заложил одну сумму — поставщик выставил другую.</p>
+      </div>
+      <div class="card-glass p-8 md:p-12" style="background:#f3f3f3;border-left:4px solid #e2e2e2;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">description</span>
+        <h3 class="font-black uppercase tracking-tighter text-on-surface text-lg mb-3">НЕТ ДОКУМЕНТОВ — НЕТ ЗАКРЫТИЯ</h3>
+        <p class="text-secondary text-sm">Сертификаты, счета, накладные — всё надо выбивать отдельно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 3: SOLUTIONS
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24" style="background:#2f3131;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <h2 class="font-black uppercase tracking-tighter mb-12" style="color:#f1f1f1;font-size:clamp(22px,3.5vw,40px);">
+      СОВРЕМЕННЫЕ КРЕПЁЖНЫЕ СИСТЕМЫ <span style="color:#af101a;">ЗАКРЫВАЮТ ЭТИ ВОПРОСЫ</span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card-glass-dark p-8 md:p-12" style="background:rgba(255,255,255,.05);border-left:4px solid #af101a;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">check_circle</span>
+        <h3 class="font-black uppercase tracking-tighter text-lg mb-3" style="color:#f1f1f1;">СКЛАД В ПЕНЗЕ — ТОВАР ВСЕГДА В НАЛИЧИИ</h3>
+        <p class="text-sm" style="color:#bbc8d0;">Основные позиции всегда на складе. Отгрузка день в день при заказе до 15:00.</p>
+      </div>
+      <div class="card-glass-dark p-8 md:p-12" style="background:rgba(255,255,255,.05);border-left:4px solid #af101a;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">inventory_2</span>
+        <h3 class="font-black uppercase tracking-tighter text-lg mb-3" style="color:#f1f1f1;">10 000+ ПОЗИЦИЙ В ОДНОМ МЕСТЕ</h3>
+        <p class="text-sm" style="color:#bbc8d0;">Саморезы, анкеры, дюбели, химия, инструмент — всё у нас.</p>
+      </div>
+      <div class="card-glass-dark p-8 md:p-12" style="background:rgba(255,255,255,.05);border-left:4px solid #af101a;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">payments</span>
+        <h3 class="font-black uppercase tracking-tighter text-lg mb-3" style="color:#f1f1f1;">СТАБИЛЬНЫЕ ЦЕНЫ, ОТСРОЧКА ДО 30 ДНЕЙ</h3>
+        <p class="text-sm" style="color:#bbc8d0;">Фиксируем цены. Отсрочка для постоянных клиентов — до 30 дней.</p>
+      </div>
+      <div class="card-glass-dark p-8 md:p-12" style="background:rgba(255,255,255,.05);border-left:4px solid #af101a;">
+        <span class="material-symbols-outlined text-3xl mb-4 block">verified</span>
+        <h3 class="font-black uppercase tracking-tighter text-lg mb-3" style="color:#f1f1f1;">ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ</h3>
+        <p class="text-sm" style="color:#bbc8d0;">Счёт, накладная, сертификаты ГОСТ/DIN — всё с первой отгрузки.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 4: STATS COUNTER
+═══════════════════════════════════════════════ -->
+<section id="stats-section" class="py-8" style="background:#af101a;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4">
+    <div class="text-center py-6 px-4" style="border-right:1px solid rgba(255,255,255,.2);">
+      <div data-target="21" data-suffix="" class="font-black" style="color:#fff;font-size:clamp(32px,5vw,56px);">0</div>
+      <div class="font-bold uppercase mt-2" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.75);">ГОД НА РЫНКЕ ПЕНЗЫ</div>
+    </div>
+    <div class="text-center py-6 px-4" style="border-right:1px solid rgba(255,255,255,.2);">
+      <div data-target="10000" data-suffix="+" class="font-black" style="color:#fff;font-size:clamp(32px,5vw,56px);">0</div>
+      <div class="font-bold uppercase mt-2" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.75);">ПОЗИЦИЙ В АССОРТИМЕНТЕ</div>
+    </div>
+    <div class="text-center py-6 px-4" style="border-right:1px solid rgba(255,255,255,.2);">
+      <div data-target="3" data-suffix="" class="font-black" style="color:#fff;font-size:clamp(32px,5vw,56px);">0</div>
+      <div class="font-bold uppercase mt-2" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.75);">МАГАЗИНА В ПЕНЗЕ И ЗАРЕЧНОМ</div>
+    </div>
+    <div class="text-center py-6 px-4">
+      <div data-target="30" data-suffix="" class="font-black" style="color:#fff;font-size:clamp(32px,5vw,56px);">0</div>
+      <div class="font-bold uppercase mt-2" style="font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.75);">ДНЕЙ ОТСРОЧКИ ДЛЯ ПАРТНЁРОВ</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 5: TESTIMONIALS
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24" style="background:#2f3131;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <h2 class="font-black uppercase tracking-tighter mb-8" style="color:#f1f1f1;font-size:clamp(24px,4vw,40px);">
+      НАМ <span style="color:#af101a;">ДОВЕРЯЮТ</span> УЖЕ 21 ГОД
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Review 1 -->
+      <div class="card-glass-dark p-6" style="background:rgba(255,255,255,.05);border-left:4px solid #af101a;">
+        <div class="flex items-center gap-4 mb-4">
+          <!-- Замените src на реальный файл av1.jpg -->
+          <img src="av1.jpg" alt="Алексей Морозов" class="rounded-full w-16 h-16 object-cover shrink-0"
+               onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzRjNjE2YyIvPjxlbGxpcHNlIGN4PSIzMiIgY3k9IjI4IiByeD0iMTIiIHJ5PSIxMyIgZmlsbD0iI2Y1ZDBhOSIvPjxlbGxpcHNlIGN4PSIzMiIgY3k9Ijc2IiByeD0iMjQiIHJ5PSIyMCIgZmlsbD0iIzJmMzEzMSIvPjwvc3ZnPg=='"/>
+          <div>
+            <div class="font-bold text-sm" style="color:#f1f1f1;">Алексей Морозов</div>
+            <div class="text-xs" style="color:#bbc8d0;">снабженец, ООО «СтройПенза»</div>
+          </div>
+        </div>
+        <p class="text-sm italic" style="color:#bbc8d0;">«Работаем с компанией уже 7 лет. Всегда есть нужный крепёж, доставляют вовремя, документы без проблем.»</p>
+      </div>
+      <!-- Review 2 -->
+      <div class="card-glass-dark p-6" style="background:rgba(255,255,255,.05);border-left:4px solid #af101a;">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="av2.jpg" alt="Дмитрий Карпов" class="rounded-full w-16 h-16 object-cover shrink-0"
+               onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzZhNzI3ZSIvPjxlbGxpcHNlIGN4PSIzMiIgY3k9IjI4IiByeD0iMTIiIHJ5PSIxMyIgZmlsbD0iI2Y1ZDBhOSIvPjxlbGxpcHNlIGN4PSIzMiIgY3k9Ijc2IiByeD0iMjQiIHJ5PSIyMCIgZmlsbD0iIzFhMWMxYyIvPjwvc3ZnPg=='"/>
+          <div>
+            <div class="font-bold text-sm" style="color:#f1f1f1;">Дмитрий Карпов</div>
+            <div class="text-xs" style="color:#bbc8d0;">прораб</div>
+          </div>
+        </div>
+        <p class="text-sm italic" style="color:#bbc8d0;">«Брал саморезы и анкеры оптом для объекта — цены честные, всё в наличии, отгрузили в тот же день.»</p>
+      </div>
+      <!-- Review 3 -->
+      <div class="card-glass-dark p-6" style="background:rgba(255,255,255,.05);border-left:4px solid #af101a;">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="av3.jpg" alt="Виктор Семёнов" class="rounded-full w-16 h-16 object-cover shrink-0"
+               onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzU4NTA0OCIvPjxlbGxpcHNlIGN4PSIzMiIgY3k9IjI4IiByeD0iMTIiIHJ5PSIxMyIgZmlsbD0iI2U4YzQ5OCIvPjxlbGxpcHNlIGN4PSIzMiIgY3k9Ijc2IiByeD0iMjQiIHJ5PSIyMCIgZmlsbD0iIzJmMzEzMSIvPjwvc3ZnPg=='"/>
+          <div>
+            <div class="font-bold text-sm" style="color:#f1f1f1;">Виктор Семёнов</div>
+            <div class="text-xs" style="color:#bbc8d0;">частный строитель</div>
+          </div>
+        </div>
+        <p class="text-sm italic" style="color:#bbc8d0;">«Удобно, что три магазина в городе. Всегда найдёшь что нужно, консультируют нормально.»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     PARTNERS MARQUEE
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 mb-10">
+    <h2 class="font-black uppercase tracking-tighter" style="color:#af101a;font-size:clamp(22px,3.5vw,36px);">
+      НАШИ ПОСТАВЩИКИ И ПАРТНЕРЫ
+    </h2>
+  </div>
+  <div class="partners-marquee-wrap">
+    <div class="partners-marquee">
+      <!-- Замените src на реальные пути к файлам логотипов -->
+      <img src="logo-la.png" alt="Luga Abrasiv" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-phg.png" alt="PHG" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-abraflex.png" alt="Abraflex" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-daxmer.png" alt="Daxmer" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-himtex.png" alt="Himtex" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-techkrep.png" alt="Tech-KREP" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-trio-diamond.png" alt="Trio-Diamond" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-profosnatska.png" alt="Профоснастка" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-metall-servis.png" alt="Металл Сервис" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <!-- Дубликат для бесшовной прокрутки -->
+      <img src="logo-la.png" alt="Luga Abrasiv" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-phg.png" alt="PHG" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-abraflex.png" alt="Abraflex" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-daxmer.png" alt="Daxmer" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-himtex.png" alt="Himtex" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-techkrep.png" alt="Tech-KREP" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-trio-diamond.png" alt="Trio-Diamond" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-profosnatska.png" alt="Профоснастка" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+      <img src="logo-metall-servis.png" alt="Металл Сервис" class="h-12 md:h-16 w-auto object-contain shrink-0 grayscale opacity-50 hover:grayscale-0 hover:opacity-100" style="transition:all .3s;"/>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 6: FAQ HORIZONTAL ACCORDION
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+      <h2 class="font-black uppercase tracking-tighter text-on-surface" style="font-size:clamp(24px,4vw,40px);">
+        ЧАСТЫЕ <span style="color:#af101a;">ВОПРОСЫ</span>
+      </h2>
+      <button class="btn-cta px-6 py-3 text-xs" onclick="openModal('faq')">ВСЕ ВОПРОСЫ</button>
+    </div>
+    <div class="h-accordion" id="faq-accordion">
+      <div class="h-acc-item active" onclick="setFaq(0)">
+        <div class="question">Минимальная сумма для опта?</div>
+        <div class="answer">Оптовые условия обсуждаются индивидуально. Специальные цены — при регулярных закупках или заказах от 5 000 руб. Звоните — согласуем под ваш объём.</div>
+      </div>
+      <div class="h-acc-item" onclick="setFaq(1)">
+        <div class="question">Отсрочка платежа?</div>
+        <div class="answer">Да. Для постоянных клиентов (юрлиц) предоставляем отсрочку до 30 дней. Условия согласовываются после нескольких отгрузок.</div>
+      </div>
+      <div class="h-acc-item" onclick="setFaq(2)">
+        <div class="question">Скорость доставки по Пензе?</div>
+        <div class="answer">При заказе до 15:00 — отгрузка в тот же день. Доставка по Пензе — бесплатно от 3 000 руб. По России — любой транспортной компанией за ваш счёт.</div>
+      </div>
+      <div class="h-acc-item" onclick="setFaq(3)">
+        <div class="question">Сертификаты на продукцию?</div>
+        <div class="answer">Вся продукция соответствует ГОСТ и DIN. Сертификаты качества предоставляем по запросу вместе с отгрузкой.</div>
+      </div>
+      <div class="h-acc-item" onclick="setFaq(4)">
+        <div class="question">Можно купить в розницу?</div>
+        <div class="answer">Конечно. У нас 3 магазина в Пензе и Заречном — заходите в любой. Розничные продажи без ограничений по минимальной сумме.</div>
+      </div>
+      <div class="h-acc-item" onclick="setFaq(5)">
+        <div class="question">Подберёте крепёж под задачу?</div>
+        <div class="answer">Да. Опишите задачу в заявке или позвоните — подберём нужный крепёж и рассчитаем стоимость.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 7: FINAL CTA
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24" style="background:#2f3131;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div>
+      <h2 class="font-black uppercase tracking-tighter mb-4" style="color:#f1f1f1;font-size:clamp(22px,3.5vw,40px);">
+        НУЖЕН КРЕПЁЖ? <span style="color:#af101a;">ОБСУДИМ ЗА 5 МИНУТ</span>
+      </h2>
+      <p class="text-sm mb-8" style="color:#bbc8d0;">Оставьте заявку — менеджер перезвонит и рассчитает стоимость.</p>
+      <form onsubmit="submitMainForm(event)" class="space-y-4" id="main-form">
+        <input type="text" placeholder="Иван" class="form-input" id="mf-name"/>
+        <div class="phone-input-wrapper" id="mf-phone-wrap">
+          <select id="mf-country" class="w-24 shrink-0" style="border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 8px;font-size:13px;color:#1a1c1c;border-radius:0;outline:none;">
+            <option value="+7">🇷🇺 +7</option>
+            <option value="+375">🇧🇾 +375</option>
+            <option value="+380">🇺🇦 +380</option>
+            <option value="+49">🇩🇪 +49</option>
+            <option value="+1">🇺🇸 +1</option>
+          </select>
+          <input type="tel" id="mf-phone" placeholder="(___) ___-__-__" required
+            style="flex:1;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 16px;font-size:13px;color:#1a1c1c;border-radius:0;outline:none;font-family:inherit;"/>
+        </div>
+        <textarea placeholder="Опишите задачу или укажите артикул" class="form-input" id="mf-msg"></textarea>
+        <label class="flex items-start gap-3 text-xs" style="color:#bbc8d0;">
+          <input type="checkbox" required class="mt-1" style="accent-color:#af101a;"/>
+          <span>Я даю согласие на обработку персональных данных в соответствии с
+            <button type="button" onclick="window.open('privacy.html','_blank')" class="underline" style="color:#af101a;background:none;border:none;cursor:pointer;font-family:inherit;font-size:inherit;">Политикой конфиденциальности</button>
+          </span>
+        </label>
+        <button type="submit" class="btn-cta px-10 py-4 w-full text-sm">ОТПРАВИТЬ ЗАЯВКУ</button>
+        <div id="mf-success" style="display:none;" class="text-center py-4 font-bold" style="color:#af101a;">Спасибо! Перезвоним в течение 15 минут.</div>
+      </form>
+    </div>
+    <div class="flex flex-col justify-center pl-0 lg:pl-8" style="border-left:0 solid #af101a;" id="cta-contact-block">
+      <div class="space-y-4">
+        <a href="tel:+78412968740" class="flex items-center gap-3 text-sm font-medium" style="color:#f1f1f1;">
+          <span class="material-symbols-outlined">phone</span> 8 (8412) 96-87-40
+        </a>
+        <a href="tel:+79875014084" class="flex items-center gap-3 text-sm font-medium" style="color:#f1f1f1;">
+          <span class="material-symbols-outlined">smartphone</span> +7 (987) 501-40-84
+        </a>
+        <a href="mailto:ckc@krepsys.ru" class="flex items-center gap-3 text-sm font-medium" style="color:#f1f1f1;">
+          <span class="material-symbols-outlined">email</span> ckc@krepsys.ru
+        </a>
+        <div class="flex items-center gap-4 pt-2">
+          <a href="https://wa.me/79875014084" target="_blank" rel="noopener" class="flex items-center gap-2">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#af101a"/></svg>
+            <span class="text-sm" style="color:#f1f1f1;">WhatsApp</span>
+          </a>
+          <a href="https://t.me/+79875014084" target="_blank" rel="noopener" class="flex items-center gap-2">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="#af101a"/></svg>
+            <span class="text-sm" style="color:#f1f1f1;">Telegram</span>
+          </a>
+        </div>
+        <div class="flex items-center gap-3 pt-2">
+          <span class="material-symbols-outlined">schedule</span>
+          <span class="text-sm" style="color:#bbc8d0;">Пн.–Пт.: с 8:30 до 17:00 | Сб.–Вс.: выходные</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer style="background:#1a1c1c;border-top:2px solid #e2e2e2;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+      <div class="flex items-center gap-2 mb-4">
+        <img src="LOGO.png" alt="Логотип" class="h-10 w-10 object-contain" onerror="this.style.display='none'"/>
+        <span class="font-extrabold italic text-xs uppercase leading-tight" style="color:#af101a;max-width:140px;">СОВРЕМЕННЫЕ<br/>КРЕПЁЖНЫЕ<br/>СИСТЕМЫ</span>
+      </div>
+      <p class="text-xs" style="color:#4c616c;">Крепёж, метизы и инструмент оптом и в розницу в Пензе и области.</p>
+    </div>
+    <div>
+      <h4 class="font-bold text-xs uppercase tracking-widest mb-4" style="color:#af101a;">Каталог</h4>
+      <button onclick="openCatalog('samorezy')" class="block text-xs mb-2 hover:underline text-left" style="color:#4c616c;background:none;border:none;cursor:pointer;">Саморезы</button>
+      <button onclick="openCatalog('ankery')" class="block text-xs mb-2 hover:underline text-left" style="color:#4c616c;background:none;border:none;cursor:pointer;">Анкеры</button>
+      <button onclick="openCatalog('dyubeli')" class="block text-xs mb-2 hover:underline text-left" style="color:#4c616c;background:none;border:none;cursor:pointer;">Дюбели</button>
+      <button onclick="openCatalog('metricheskiy')" class="block text-xs mb-2 hover:underline text-left" style="color:#4c616c;background:none;border:none;cursor:pointer;">Метрический</button>
+      <button onclick="openCatalog('khimiya')" class="block text-xs mb-2 hover:underline text-left" style="color:#4c616c;background:none;border:none;cursor:pointer;">Строй. химия</button>
+      <button onclick="openCatalog('instrument')" class="block text-xs mb-2 hover:underline text-left" style="color:#4c616c;background:none;border:none;cursor:pointer;">Инструмент</button>
+    </div>
+    <div>
+      <h4 class="font-bold text-xs uppercase tracking-widest mb-4" style="color:#af101a;">Контакты</h4>
+      <a href="tel:+78412968740" class="flex items-center gap-2 text-xs mb-2" style="color:#f1f1f1;">
+        <span class="material-symbols-outlined" style="font-size:14px;">phone</span>8 (8412) 96-87-40
+      </a>
+      <a href="tel:+79875014084" class="flex items-center gap-2 text-xs mb-2" style="color:#f1f1f1;">
+        <span class="material-symbols-outlined" style="font-size:14px;">smartphone</span>+7 (987) 501-40-84
+      </a>
+      <a href="mailto:ckc@krepsys.ru" class="flex items-center gap-2 text-xs mb-2" style="color:#f1f1f1;">
+        <span class="material-symbols-outlined" style="font-size:14px;">email</span>ckc@krepsys.ru
+      </a>
+      <div class="flex gap-3 mt-3">
+        <a href="https://wa.me/79875014084" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#af101a"/></svg>
+        </a>
+        <a href="https://t.me/+79875014084" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="#af101a"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-bold text-xs uppercase tracking-widest mb-4" style="color:#af101a;">Магазины</h4>
+      <div class="mb-3 flex items-start gap-2">
+        <span class="material-symbols-outlined text-base mt-0.5" style="font-size:14px;">store</span>
+        <div><div class="text-xs font-medium uppercase tracking-widest" style="color:#4c616c;">Пенза, ул. Буровая, 34, оф. 302</div><div class="text-xs" style="color:#4c616c;">8 (8412) 90-09-39</div></div>
+      </div>
+      <div class="mb-3 flex items-start gap-2">
+        <span class="material-symbols-outlined text-base mt-0.5" style="font-size:14px;">store</span>
+        <div><div class="text-xs font-medium uppercase tracking-widest" style="color:#4c616c;">Пенза, ул. Перспективная, 1К</div><div class="text-xs" style="color:#4c616c;">8 (8412) 20-00-12</div></div>
+      </div>
+      <div class="flex items-start gap-2">
+        <span class="material-symbols-outlined text-base mt-0.5" style="font-size:14px;">store</span>
+        <div><div class="text-xs font-medium uppercase tracking-widest" style="color:#4c616c;">Заречный, ул. Литке, 4</div><div class="text-xs" style="color:#4c616c;">8 (8412) 60-90-04</div></div>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #2f3131;">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-wrap items-center justify-between gap-4">
+      <span class="text-xs" style="color:#4c616c;">© 2005–2026 ООО «Современные Крепёжные Системы». Все права защищены.</span>
+      <div class="flex gap-4">
+        <button onclick="window.open('privacy.html','_blank')" class="text-xs underline" style="color:#4c616c;background:none;border:none;cursor:pointer;">Политика конфиденциальности</button>
+        <a href="https://neuro-mark.ru/" target="_blank" rel="noopener" class="text-xs font-medium" style="color:#af101a;">Разработка: neuro-mark.ru</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════
+     MOBILE BOTTOM BAR
+═══════════════════════════════════════════════ -->
+<div class="fixed bottom-0 left-0 right-0 z-[9999] flex md:hidden">
+  <a href="tel:+78412968740" class="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-black uppercase tracking-wider"
+    style="background:#af101a;color:#fff;">
+    <span class="material-symbols-outlined text-lg" style="color:#fff;font-size:18px;">phone</span> ПОЗВОНИТЬ
+  </a>
+  <a href="https://wa.me/79875014084" target="_blank" rel="noopener"
+    class="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-black uppercase tracking-wider"
+    style="background:#2f3131;color:#fff;">
+    <svg width="18" height="18" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#fff"/></svg>
+    WHATSAPP
+  </a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     MODALS
+═══════════════════════════════════════════════ -->
+
+<!-- CATALOG MODAL -->
+<div id="modal-catalog" class="modal-overlay" style="display:none;">
+  <div class="sticky top-0 z-10 bg-white flex items-center justify-between px-6 md:px-12 py-4" style="border-bottom:2px solid #e2e2e2;">
+    <button onclick="closeModal()" class="flex items-center gap-2 font-bold text-sm uppercase tracking-wider" style="color:#af101a;background:none;border:none;cursor:pointer;">
+      <span class="material-symbols-outlined">arrow_back</span> НА ГЛАВНУЮ
+    </button>
+    <h1 class="font-black text-lg md:text-2xl uppercase tracking-tighter" style="color:#af101a;">КАТАЛОГ ТОВАРОВ</h1>
+    <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+  <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
+    <p class="text-sm text-secondary mb-6">Более 10 000 наименований в наличии. Цены уточняйте у менеджера.</p>
+    <div class="sticky top-16 z-10 bg-surface pb-4">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" id="cat-search" placeholder="Поиск в каталоге..." oninput="renderCatalog()"
+          class="w-full bg-transparent border-0 border-b-2 text-sm py-2 focus:outline-none" style="border-color:#af101a;"/>
+      </div>
+      <div class="flex flex-wrap gap-2" id="cat-tabs">
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="all" onclick="setCat('all')" style="color:#af101a;border-bottom:2px solid #af101a;background:none;border-top:none;border-left:none;border-right:none;cursor:pointer;">ВСЕ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="samorezy" onclick="setCat('samorezy')" style="color:#4c616c;background:none;border:none;cursor:pointer;">САМОРЕЗЫ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="ankery" onclick="setCat('ankery')" style="color:#4c616c;background:none;border:none;cursor:pointer;">АНКЕРЫ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="dyubeli" onclick="setCat('dyubeli')" style="color:#4c616c;background:none;border:none;cursor:pointer;">ДЮБЕЛИ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="perfokrepezh" onclick="setCat('perfokrepezh')" style="color:#4c616c;background:none;border:none;cursor:pointer;">ПЕРФОКРЕПЁЖ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="metricheskiy" onclick="setCat('metricheskiy')" style="color:#4c616c;background:none;border:none;cursor:pointer;">МЕТРИЧЕСКИЙ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="khimiya" onclick="setCat('khimiya')" style="color:#4c616c;background:none;border:none;cursor:pointer;">СТРОЙ.ХИМИЯ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="instrument" onclick="setCat('instrument')" style="color:#4c616c;background:none;border:none;cursor:pointer;">ИНСТРУМЕНТ</button>
+        <button class="cat-tab px-4 py-2 text-xs font-bold uppercase tracking-wider" data-cat="drugoe" onclick="setCat('drugoe')" style="color:#4c616c;background:none;border:none;cursor:pointer;">ДРУГОЕ</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6" id="products-grid"></div>
+  </div>
+</div>
+
+<!-- ABOUT MODAL -->
+<div id="modal-about" class="modal-overlay" style="display:none;">
+  <div class="sticky top-0 z-10 bg-white flex items-center justify-between px-6 md:px-12 py-4" style="border-bottom:2px solid #e2e2e2;">
+    <button onclick="closeModal()" class="flex items-center gap-2 font-bold text-sm uppercase" style="color:#af101a;background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined">arrow_back</span> НА ГЛАВНУЮ</button>
+    <h1 class="font-black text-lg md:text-2xl uppercase tracking-tighter" style="color:#af101a;">О НАС</h1>
+    <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+  <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
+    <h2 class="font-black text-2xl md:text-3xl uppercase tracking-tighter text-on-surface mb-8">
+      СОВРЕМЕННЫЕ КРЕПЁЖНЫЕ СИСТЕМЫ — ВАШ <span style="color:#af101a;">НАДЁЖНЫЙ ПОСТАВЩИК</span> МЕТИЗОВ С 2005 ГОДА
+    </h2>
+    <div class="mb-12">
+      <h3 class="font-bold text-lg text-on-surface mb-4">«С 2005 года мы держим слово»</h3>
+      <div class="space-y-4 text-sm leading-relaxed text-secondary">
+        <p>Мы не посредники. «Современные крепёжные системы» — прямой поставщик крепежа и метизов для строительных компаний, производств и частных мастеров Пензы и области.</p>
+        <p>За 21 год мы поняли главное: снабженцу не нужны красивые слова — ему нужно, чтобы товар был на складе, цена не менялась после звонка, а документы пришли вместе с машиной. Именно так мы и работаем.</p>
+        <p>10 000+ наименований в наличии. Три магазина в черте города. Собственная служба доставки — бесплатно по Пензе. Отсрочка платежа до 30 дней для постоянных партнёров.</p>
+        <p>Вся продукция сертифицирована по ГОСТ и DIN. Мы официальные дилеры Tech-Krep, Abraflex, Himtex и ещё восьми производителей — без серых схем и контрафакта.</p>
+        <p>Нам доверяют прорабы, которые не прощают ошибок. Снабженцы, которые отвечают за бюджет. Мастера, которые ценят своё время.</p>
+        <p>Если вам нужен поставщик, который не подведёт — вы уже на нужном сайте.</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+      <!-- Замените src на реальные файлы about-1.jpg, about-2.jpg, about-3.jpg -->
+      <img src="about-1.jpg" alt="Магазин крепежа" class="w-full object-cover" style="height:250px;" loading="lazy" onerror="this.style.background='#eeeeee';this.alt='Фото магазина'"/>
+      <img src="about-2.jpg" alt="Ассортимент крепежа" class="w-full object-cover" style="height:250px;" loading="lazy" onerror="this.style.background='#e2e2e2';this.alt='Ассортимент'"/>
+      <img src="about-3.jpg" alt="Торговый зал" class="w-full object-cover" style="height:250px;" loading="lazy" onerror="this.style.background='#d0d0d0';this.alt='Торговый зал'"/>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card-glass p-6 flex items-start gap-4" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl">bolt</span><p class="text-sm font-medium text-on-surface">Официальный дилер Tech-Krep, Abraflex, Himtex и ещё 8 брендов</p></div>
+      <div class="card-glass p-6 flex items-start gap-4" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl">security</span><p class="text-sm font-medium text-on-surface">Собственная фасовка под торговой маркой «КРЕПЁЖ»</p></div>
+      <div class="card-glass p-6 flex items-start gap-4" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl">local_shipping</span><p class="text-sm font-medium text-on-surface">Собственная служба доставки по Пензе — бесплатно</p></div>
+      <div class="card-glass p-6 flex items-start gap-4" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl">support_agent</span><p class="text-sm font-medium text-on-surface">Консультация специалиста по подбору крепежа</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHOLESALE MODAL -->
+<div id="modal-wholesale" class="modal-overlay" style="display:none;">
+  <div class="sticky top-0 z-10 bg-white flex items-center justify-between px-6 md:px-12 py-4" style="border-bottom:2px solid #e2e2e2;">
+    <button onclick="closeModal()" class="flex items-center gap-2 font-bold text-sm uppercase" style="color:#af101a;background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined">arrow_back</span> НА ГЛАВНУЮ</button>
+    <h1 class="font-black text-lg md:text-2xl uppercase tracking-tighter" style="color:#af101a;">ОПТОВИКАМ</h1>
+    <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+  <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
+    <h2 class="font-black text-2xl md:text-3xl uppercase tracking-tighter mb-8" style="color:#af101a;">УСЛОВИЯ ОПТОВЫХ ЗАКУПОК</h2>
+    <table class="w-table mb-12">
+      <thead><tr><th>Объём заказа</th><th>Скидка</th><th>Отсрочка</th><th>Менеджер</th></tr></thead>
+      <tbody>
+        <tr><td>от 5 000 руб.</td><td>3%</td><td>—</td><td>Общий</td></tr>
+        <tr><td>от 30 000 руб.</td><td>5%</td><td>до 14 дней</td><td>Персональный</td></tr>
+        <tr><td>от 100 000 руб.</td><td>7%</td><td>до 30 дней</td><td>Персональный + выезд</td></tr>
+      </tbody>
+    </table>
+    <div class="max-w-lg">
+      <h3 class="font-bold uppercase text-on-surface mb-4">Запросить коммерческое предложение</h3>
+      <form onsubmit="submitSimpleForm(event,'ws')" class="space-y-4">
+        <input type="text" placeholder="Иван" class="form-input" id="ws-name"/>
+        <div class="phone-input-wrapper"><select style="width:96px;flex-shrink:0;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 8px;font-size:13px;border-radius:0;outline:none;"><option>🇷🇺 +7</option><option>🇧🇾 +375</option><option>🇺🇦 +380</option></select><input type="tel" required placeholder="(___) ___-__-__" id="ws-phone" style="flex:1;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 16px;font-size:13px;border-radius:0;outline:none;font-family:inherit;"/></div>
+        <label class="flex items-start gap-3 text-xs" style="color:#4c616c;"><input type="checkbox" required class="mt-1" style="accent-color:#af101a;"/><span>Согласен на обработку персональных данных</span></label>
+        <button type="submit" class="btn-cta px-8 py-4 text-sm w-full">ПОЛУЧИТЬ КП</button>
+        <div id="ws-success" style="display:none;color:#af101a;font-weight:700;text-align:center;padding:16px 0;">Спасибо! Перезвоним в течение 15 минут.</div>
+      </form>
+      <div class="mt-6 text-sm text-secondary">
+        Оптовый отдел: <a href="mailto:ckc@krepsys.ru" class="underline" style="color:#af101a;">ckc@krepsys.ru</a> | <a href="tel:+78412968740" style="color:#af101a;">8 (8412) 96-87-40</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FASOVKA MODAL -->
+<div id="modal-fasovka" class="modal-overlay" style="display:none;">
+  <div class="sticky top-0 z-10 bg-white flex items-center justify-between px-6 md:px-12 py-4" style="border-bottom:2px solid #e2e2e2;">
+    <button onclick="closeModal()" class="flex items-center gap-2 font-bold text-sm uppercase" style="color:#af101a;background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined">arrow_back</span> НА ГЛАВНУЮ</button>
+    <h1 class="font-black text-lg md:text-2xl uppercase tracking-tighter" style="color:#af101a;">ФАСОВКА КРЕПЕЖА</h1>
+    <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+  <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
+    <h2 class="font-black text-2xl md:text-3xl uppercase tracking-tighter text-on-surface mb-6">СОБСТВЕННАЯ ФАСОВКА ПОД ТОРГОВОЙ МАРКОЙ «КРЕПЁЖ»</h2>
+    <p class="text-sm leading-relaxed text-secondary mb-8 max-w-3xl">Мы фасуем крепёж в удобную упаковку — от мелких партий для розницы до промышленных объёмов. Собственная фасовочная линия позволяет предложить оптимальную комплектацию под любую задачу.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="card-glass p-6" style="border-left:4px solid #af101a;background:#f3f3f3;"><span class="material-symbols-outlined text-3xl mb-3 block">inventory_2</span><h3 class="font-black text-sm uppercase tracking-tight text-on-surface mb-2">ФАСОВКА ОТ 10 ШТ</h3><p class="text-xs text-secondary leading-relaxed">Мелкая фасовка для розничных покупателей и небольших объектов.</p></div>
+      <div class="card-glass p-6" style="border-left:4px solid #af101a;background:#f3f3f3;"><span class="material-symbols-outlined text-3xl mb-3 block">warehouse</span><h3 class="font-black text-sm uppercase tracking-tight text-on-surface mb-2">ПРОМЫШЛЕННЫЕ ПАРТИИ</h3><p class="text-xs text-secondary leading-relaxed">Крупная фасовка по 500–5000 шт для строительных компаний и производств.</p></div>
+      <div class="card-glass p-6" style="border-left:4px solid #af101a;background:#f3f3f3;"><span class="material-symbols-outlined text-3xl mb-3 block">verified</span><h3 class="font-black text-sm uppercase tracking-tight text-on-surface mb-2">МАРКИРОВКА И УЧЁТ</h3><p class="text-xs text-secondary leading-relaxed">Каждая упаковка промаркирована: артикул, количество, ГОСТ/DIN.</p></div>
+    </div>
+    <button class="btn-cta px-8 py-4 text-sm" onclick="closeModal();openOrderPopup();">ОБСУДИТЬ ФАСОВКУ</button>
+  </div>
+</div>
+
+<!-- CONTACTS MODAL -->
+<div id="modal-contacts" class="modal-overlay" style="display:none;">
+  <div class="sticky top-0 z-10 bg-white flex items-center justify-between px-6 md:px-12 py-4" style="border-bottom:2px solid #e2e2e2;">
+    <button onclick="closeModal()" class="flex items-center gap-2 font-bold text-sm uppercase" style="color:#af101a;background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined">arrow_back</span> НА ГЛАВНУЮ</button>
+    <h1 class="font-black text-lg md:text-2xl uppercase tracking-tighter" style="color:#af101a;">КОНТАКТЫ</h1>
+    <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+  <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="card-glass p-6" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl mb-3 block">store</span><p class="font-bold text-sm text-on-surface mb-2">г. Пенза, ул. Буровая, 34, оф. 302</p><a href="tel:+78412900939" class="text-sm" style="color:#af101a;">8 (8412) 90-09-39</a></div>
+      <div class="card-glass p-6" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl mb-3 block">store</span><p class="font-bold text-sm text-on-surface mb-2">г. Пенза, ул. Перспективная, 1К</p><a href="tel:+78412200012" class="text-sm" style="color:#af101a;">8 (8412) 20-00-12</a></div>
+      <div class="card-glass p-6" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl mb-3 block">store</span><p class="font-bold text-sm text-on-surface mb-2">г. Заречный, ул. Литке, 4</p><a href="tel:+78412609004" class="text-sm" style="color:#af101a;">8 (8412) 60-90-04</a></div>
+    </div>
+    <div class="space-y-3">
+      <h3 class="font-bold uppercase text-on-surface mb-4">Общие контакты</h3>
+      <a href="tel:+78412968740" class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined">phone</span> 8 (8412) 96-87-40</a>
+      <a href="tel:+79875014084" class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined">smartphone</span> +7 (987) 501-40-84</a>
+      <a href="mailto:ckc@krepsys.ru" class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined">email</span> ckc@krepsys.ru</a>
+      <div class="flex items-center gap-4 pt-2">
+        <a href="https://wa.me/79875014084" target="_blank" rel="noopener" class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#af101a"/></svg>
+          <span class="text-sm text-on-surface">WhatsApp</span>
+        </a>
+        <a href="https://t.me/+79875014084" target="_blank" rel="noopener" class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="#af101a"/></svg>
+          <span class="text-sm text-on-surface">Telegram</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-3 text-sm text-secondary"><span class="material-symbols-outlined">schedule</span> Пн.–Пт.: с 8:30 до 17:00 | Сб.–Вс.: выходные</div>
+    </div>
+  </div>
+</div>
+
+<!-- SALES MODAL -->
+<div id="modal-sales" class="modal-overlay" style="display:none;">
+  <div class="sticky top-0 z-10 bg-white flex items-center justify-between px-6 md:px-12 py-4" style="border-bottom:2px solid #e2e2e2;">
+    <button onclick="closeModal()" class="flex items-center gap-2 font-bold text-sm uppercase" style="color:#af101a;background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined">arrow_back</span> НА ГЛАВНУЮ</button>
+    <h1 class="font-black text-lg md:text-2xl uppercase tracking-tighter" style="color:#af101a;">ТЕКУЩИЕ АКЦИИ</h1>
+    <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+  <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card-glass p-6" style="background:#f3f3f3;border-left:4px solid #af101a;"><div class="flex items-center justify-between mb-3"><span class="text-3xl font-black" style="color:#af101a;">10%</span><span class="text-xs font-bold uppercase tracking-widest text-secondary">до 30 апреля 2026</span></div><h3 class="font-black uppercase text-sm text-on-surface mb-2">СКИДКА 10% НА САМОРЕЗЫ ПО ДЕРЕВУ</h3><p class="text-sm text-secondary mb-4">При покупке от 10 упаковок — дополнительная скидка 10%.</p><button class="btn-cta px-6 py-3 text-xs" onclick="closeModal();openOrderPopup();">УЗНАТЬ ПОДРОБНЕЕ</button></div>
+      <div class="card-glass p-6" style="background:#f3f3f3;border-left:4px solid #af101a;"><div class="flex items-center justify-between mb-3"><span class="text-3xl font-black" style="color:#af101a;">9%</span><span class="text-xs font-bold uppercase tracking-widest text-secondary">до 15 мая 2026</span></div><h3 class="font-black uppercase text-sm text-on-surface mb-2">АНКЕРЫ HIMTEX — ЦЕНА СНИЖЕНА</h3><p class="text-sm text-secondary mb-4">Химические анкеры HIMTEX 300 мл по 380 руб. вместо 420 руб.</p><button class="btn-cta px-6 py-3 text-xs" onclick="closeModal();openOrderPopup();">УЗНАТЬ ПОДРОБНЕЕ</button></div>
+      <div class="card-glass p-6" style="background:#f3f3f3;border-left:4px solid #af101a;"><div class="flex items-center justify-between mb-3"><span class="text-3xl font-black" style="color:#af101a;">0₽</span><span class="text-xs font-bold uppercase tracking-widest text-secondary">бессрочно</span></div><h3 class="font-black uppercase text-sm text-on-surface mb-2">БЕСПЛАТНАЯ ДОСТАВКА ОТ 1 500 РУБ.</h3><p class="text-sm text-secondary mb-4">Снизили порог бесплатной доставки по Пензе до 1 500 руб.</p><button class="btn-cta px-6 py-3 text-xs" onclick="closeModal();openOrderPopup();">УЗНАТЬ ПОДРОБНЕЕ</button></div>
+      <div class="card-glass p-6" style="background:#f3f3f3;border-left:4px solid #af101a;"><div class="flex items-center justify-between mb-3"><span class="text-3xl font-black" style="color:#af101a;">15%</span><span class="text-xs font-bold uppercase tracking-widest text-secondary">до 1 июня 2026</span></div><h3 class="font-black uppercase text-sm text-on-surface mb-2">КОМПЛЕКТ «МАСТЕР» — ВЫГОДА 15%</h3><p class="text-sm text-secondary mb-4">Саморезы + дюбели + перфокрепёж в одном комплекте. Экономия 15%.</p><button class="btn-cta px-6 py-3 text-xs" onclick="closeModal();openOrderPopup();">УЗНАТЬ ПОДРОБНЕЕ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ MODAL -->
+<div id="modal-faq" class="modal-overlay" style="display:none;">
+  <div class="sticky top-0 z-10 bg-white flex items-center justify-between px-6 md:px-12 py-4" style="border-bottom:2px solid #e2e2e2;">
+    <button onclick="closeModal()" class="flex items-center gap-2 font-bold text-sm uppercase" style="color:#af101a;background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined">arrow_back</span> НА ГЛАВНУЮ</button>
+    <h1 class="font-black text-lg md:text-2xl uppercase tracking-tighter" style="color:#af101a;">ЧАСТЫЕ ВОПРОСЫ</h1>
+    <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
+  </div>
+  <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
+    <div class="max-w-3xl space-y-4">
+      <details class="border border-surface-container-highest"><summary class="p-4 font-bold text-sm uppercase tracking-tighter cursor-pointer text-on-surface hover:text-primary" style="list-style:none;">Минимальная сумма заказа для оптовых условий?</summary><p class="px-4 pb-4 text-sm text-secondary">Оптовые условия обсуждаются индивидуально. Специальные цены — при регулярных закупках или заказах от 5 000 руб. Звоните — согласуем условия под ваш объём.</p></details>
+      <details class="border border-surface-container-highest"><summary class="p-4 font-bold text-sm uppercase tracking-tighter cursor-pointer text-on-surface hover:text-primary" style="list-style:none;">Можно получить отсрочку платежа?</summary><p class="px-4 pb-4 text-sm text-secondary">Да. Для постоянных клиентов (юрлиц) предоставляем отсрочку до 30 дней. Условия согласовываются после нескольких отгрузок.</p></details>
+      <details class="border border-surface-container-highest"><summary class="p-4 font-bold text-sm uppercase tracking-tighter cursor-pointer text-on-surface hover:text-primary" style="list-style:none;">Как быстро привезёте заказ по Пензе?</summary><p class="px-4 pb-4 text-sm text-secondary">При заказе до 15:00 — отгрузка в тот же день. Доставка по Пензе — бесплатно от 3 000 руб. По России — любой транспортной компанией за ваш счёт.</p></details>
+      <details class="border border-surface-container-highest"><summary class="p-4 font-bold text-sm uppercase tracking-tighter cursor-pointer text-on-surface hover:text-primary" style="list-style:none;">Есть ли сертификаты на продукцию?</summary><p class="px-4 pb-4 text-sm text-secondary">Вся продукция соответствует ГОСТ и DIN. Сертификаты качества предоставляем по запросу вместе с отгрузкой.</p></details>
+      <details class="border border-surface-container-highest"><summary class="p-4 font-bold text-sm uppercase tracking-tighter cursor-pointer text-on-surface hover:text-primary" style="list-style:none;">Могу ли я приехать и купить в розницу?</summary><p class="px-4 pb-4 text-sm text-secondary">Конечно. У нас 3 магазина в Пензе и Заречном. Розничные продажи без ограничений по минимальной сумме.</p></details>
+      <details class="border border-surface-container-highest"><summary class="p-4 font-bold text-sm uppercase tracking-tighter cursor-pointer text-on-surface hover:text-primary" style="list-style:none;">Можете подобрать крепёж под задачу?</summary><p class="px-4 pb-4 text-sm text-secondary">Да. Опишите задачу в заявке или позвоните — подберём нужный крепёж и рассчитаем стоимость.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER POPUP -->
+<div id="popup-order" class="popup-overlay" style="display:none;" onclick="closeOrderPopup()">
+  <div class="popup-backdrop"></div>
+  <div class="popup-box" onclick="event.stopPropagation()">
+    <button onclick="closeOrderPopup()" style="position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    <h3 class="font-black text-xl uppercase tracking-tighter text-on-surface mb-6">ОБСУДИТЬ ЗАКАЗ</h3>
+    <form onsubmit="submitPopupForm(event)" id="popup-form" class="space-y-4">
+      <input type="text" placeholder="Иван" class="form-input" id="pp-name"/>
+      <div class="phone-input-wrapper" id="pp-phone-wrap">
+        <select style="width:96px;flex-shrink:0;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 8px;font-size:13px;border-radius:0;outline:none;"><option>🇷🇺 +7</option><option>🇧🇾 +375</option><option>🇺🇦 +380</option></select>
+        <input type="tel" required placeholder="(___) ___-__-__" id="pp-phone" style="flex:1;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 16px;font-size:13px;border-radius:0;outline:none;font-family:inherit;"/>
+      </div>
+      <input type="text" placeholder="Что интересует?" class="form-input" id="pp-msg"/>
+      <label class="flex items-start gap-3 text-xs" style="color:#4c616c;"><input type="checkbox" required class="mt-1" style="accent-color:#af101a;"/><span>Согласен на обработку персональных данных</span></label>
+      <button type="submit" class="btn-cta px-10 py-4 w-full text-sm">ОТПРАВИТЬ</button>
+    </form>
+    <div id="popup-success" style="display:none;text-align:center;padding:32px 0;font-weight:700;color:#af101a;">Спасибо! Перезвоним в течение 15 минут.</div>
+  </div>
+</div>
+
+<!-- EXIT POPUP -->
+<div id="popup-exit" class="popup-overlay" style="display:none;" onclick="closeExitPopup()">
+  <div class="popup-backdrop"></div>
+  <div class="popup-box" onclick="event.stopPropagation()">
+    <button onclick="closeExitPopup()" style="position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    <div id="exit-form-wrap">
+      <h3 class="font-black text-lg uppercase tracking-tighter text-on-surface mb-2">ПОДОЖДИТЕ — У НАС ЕСТЬ ПРАЙС-ЛИСТ НА ВСЕ 10 000 ПОЗИЦИЙ</h3>
+      <p class="text-sm text-secondary mb-6">Оставьте телефон — пришлём актуальный прайс прямо в мессенджер</p>
+      <div class="phone-input-wrapper mb-4">
+        <select style="width:96px;flex-shrink:0;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 8px;font-size:13px;border-radius:0;outline:none;"><option>🇷🇺 +7</option><option>🇧🇾 +375</option></select>
+        <input type="tel" id="exit-phone" placeholder="(___) ___-__-__" style="flex:1;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 16px;font-size:13px;border-radius:0;outline:none;font-family:inherit;"/>
+      </div>
+      <label class="flex items-start gap-3 text-xs mb-4" style="color:#4c616c;"><input type="checkbox" id="exit-consent" class="mt-1" style="accent-color:#af101a;"/><span>Согласен на обработку персональных данных</span></label>
+      <button onclick="submitExitForm()" class="btn-cta w-full py-4 text-xs mb-3">ПОЛУЧИТЬ ПРАЙС-ЛИСТ</button>
+      <button onclick="closeExitPopup()" class="text-xs text-secondary underline w-full text-center" style="background:none;border:none;cursor:pointer;">Нет, спасибо</button>
+    </div>
+    <div id="exit-success" style="display:none;text-align:center;padding:32px 0;font-weight:700;color:#af101a;">Прайс пришлём в мессенджер в течение 5 минут в рабочее время</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════ -->
+<script>
+
+/* ── Products data ── */
+const products = [
+  {id:1,cat:"samorezy",name:"Саморез по дереву 3.5×35 мм",art:"SM-3535",price:"от 0.8 руб./шт",unit:"уп. 200 шт",stock:80,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:2,cat:"samorezy",name:"Саморез кровельный 4.8×35 мм",art:"SK-4835",price:"от 1.2 руб./шт",unit:"уп. 250 шт",stock:60,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:3,cat:"samorezy",name:"Саморез по металлу 3.9×19 мм",art:"SM-3919",price:"от 0.6 руб./шт",unit:"уп. 500 шт",stock:95,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:4,cat:"ankery",name:"Анкер клиновой М8×80 мм",art:"AK-0880",price:"от 12 руб./шт",unit:"уп. 50 шт",stock:75,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:5,cat:"ankery",name:"Химический анкер HIMTEX 300 мл",art:"AH-300",price:"от 420 руб./шт",unit:"шт",stock:25,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:6,cat:"ankery",name:"Анкер-болт М10×100 мм",art:"AB-10100",price:"от 18 руб./шт",unit:"уп. 25 шт",stock:70,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:7,cat:"dyubeli",name:"Дюбель нейлон 6×40 мм",art:"DN-0640",price:"от 0.4 руб./шт",unit:"уп. 100 шт",stock:90,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:8,cat:"dyubeli",name:"Дюбель фасадный 10×160 мм",art:"DF-10160",price:"от 6 руб./шт",unit:"уп. 50 шт",stock:55,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:9,cat:"dyubeli",name:"Дюбель для изоляции 10×100 мм",art:"DI-10100",price:"от 4 руб./шт",unit:"уп. 50 шт",stock:65,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:10,cat:"perfokrepezh",name:"Уголок крепёжный 40×40×40 мм",art:"UK-4040",price:"от 3.8 руб./шт",unit:"уп. 50 шт",stock:88,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:11,cat:"perfokrepezh",name:"Лента монтажная 20мм×25м",art:"LM-2025",price:"от 280 руб./рул",unit:"рулон",stock:40,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:12,cat:"perfokrepezh",name:"Пластина перфорированная 40×80 мм",art:"PP-4080",price:"от 5 руб./шт",unit:"уп. 50 шт",stock:72,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:13,cat:"metricheskiy",name:"Болт М8×60 DIN 933 (цинк)",art:"BM-0860",price:"от 4.5 руб./шт",unit:"уп. 50 шт",stock:82,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:14,cat:"metricheskiy",name:"Гайка М8 DIN 934 (цинк)",art:"GM-08",price:"от 2.2 руб./шт",unit:"уп. 100 шт",stock:91,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:15,cat:"metricheskiy",name:"Шайба М8 DIN 125 (цинк)",art:"SHM-08",price:"от 0.9 руб./шт",unit:"уп. 200 шт",stock:95,img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"},
+  {id:16,cat:"khimiya",name:"Пена монтажная Pro 750 мл (зима)",art:"PM-750Z",price:"от 320 руб./шт",unit:"шт",stock:50,img:"https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=70"},
+  {id:17,cat:"khimiya",name:"Герметик силиконовый 280 мл",art:"GS-280",price:"от 180 руб./шт",unit:"шт",stock:68,img:"https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=70"},
+  {id:18,cat:"khimiya",name:"Клей монтажный жидкие гвозди 310 мл",art:"KM-310",price:"от 140 руб./шт",unit:"шт",stock:77,img:"https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=70"},
+  {id:19,cat:"instrument",name:"Круг отрезной 125×1.6×22 мм",art:"KO-125M",price:"от 28 руб./шт",unit:"шт",stock:85,img:"https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=70"},
+  {id:20,cat:"instrument",name:"Сверло по бетону SDS+ 8×210 мм",art:"SB-08210",price:"от 180 руб./шт",unit:"шт",stock:60,img:"https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=70"},
+  {id:21,cat:"instrument",name:"Перчатки нитриловые плотные (пара)",art:"PN-01",price:"от 45 руб./пара",unit:"пара",stock:93,img:"https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=70"},
+  {id:22,cat:"drugoe",name:"Стяжка кабельная 4.8×300 мм (чёрная)",art:"SK-4300",price:"от 0.9 руб./шт",unit:"уп. 100 шт",stock:88,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:23,cat:"drugoe",name:"Заклёпка вытяжная 4.8×10 мм",art:"ZV-4810",price:"от 0.7 руб./шт",unit:"уп. 100 шт",stock:74,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+  {id:24,cat:"drugoe",name:"Трос стальной 6 мм (м/п)",art:"TS-06",price:"от 38 руб./м",unit:"п/м",stock:45,img:"https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=70"},
+];
+const catLabels = {all:"ВСЕ",samorezy:"САМОРЕЗЫ",ankery:"АНКЕРЫ",dyubeli:"ДЮБЕЛИ",perfokrepezh:"ПЕРФОКРЕПЁЖ",metricheskiy:"МЕТРИЧЕСКИЙ",khimiya:"СТРОЙ.ХИМИЯ",instrument:"ИНСТРУМЕНТ",drugoe:"ДРУГОЕ"};
+
+/* ── State ── */
+let currentModal = null;
+let activeCat = 'all';
+let exitShown = false;
+
+/* ── Modal control ── */
+function openModal(id) {
+  if (currentModal) { document.getElementById('modal-'+currentModal).style.display = 'none'; }
+  currentModal = id;
+  const el = document.getElementById('modal-'+id);
+  if (el) { el.style.display = 'block'; document.body.style.overflow = 'hidden'; }
+  document.querySelectorAll('.nav-link').forEach(b => { b.classList.toggle('active', b.dataset.modal === id); });
+  if (id === 'catalog') renderCatalog();
+}
+function closeModal() {
+  if (currentModal) { document.getElementById('modal-'+currentModal).style.display = 'none'; }
+  currentModal = null;
+  document.body.style.overflow = '';
+  document.querySelectorAll('.nav-link').forEach(b => b.classList.remove('active'));
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeOrderPopup(); closeExitPopup(); } });
+
+/* ── Order popup ── */
+function openOrderPopup() { document.getElementById('popup-order').style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+function closeOrderPopup() { document.getElementById('popup-order').style.display = 'none'; document.body.style.overflow = ''; }
+
+/* ── Exit popup ── */
+function closeExitPopup() { document.getElementById('popup-exit').style.display = 'none'; }
+function submitExitForm() {
+  const ph = document.getElementById('exit-phone');
+  if (!ph.value.trim()) { ph.style.borderBottomColor = '#af101a'; return; }
+  document.getElementById('exit-form-wrap').style.display = 'none';
+  document.getElementById('exit-success').style.display = 'block';
+}
+document.addEventListener('mouseleave', e => {
+  if (e.clientY < 5 && !exitShown && !sessionStorage.getItem('exit_popup_shown')) {
+    document.getElementById('popup-exit').style.display = 'flex';
+    exitShown = true; sessionStorage.setItem('exit_popup_shown','1');
+  }
+});
+
+/* ── Catalog filter ── */
+function setCat(cat) {
+  activeCat = cat;
+  document.querySelectorAll('.cat-tab').forEach(b => {
+    const isActive = b.dataset.cat === cat;
+    b.style.color = isActive ? '#af101a' : '#4c616c';
+    b.style.borderBottom = isActive ? '2px solid #af101a' : 'none';
+  });
+  renderCatalog();
+}
+function openCatalog(cat) { activeCat = cat; openModal('catalog'); }
+
+function renderCatalog() {
+  const q = (document.getElementById('cat-search')?.value || '').toLowerCase();
+  const grid = document.getElementById('products-grid');
+  if (!grid) return;
+  const filtered = products.filter(p => {
+    const matchCat = activeCat === 'all' || p.cat === activeCat;
+    const matchQ = !q || p.name.toLowerCase().includes(q) || p.art.toLowerCase().includes(q);
+    return matchCat && matchQ;
+  });
+  grid.innerHTML = filtered.map(p => `
+    <div class="product-card bg-white overflow-hidden" style="border:1px solid #e2e2e2;">
+      <div style="position:relative;height:160px;overflow:hidden;">
+        <img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;transition:filter .3s;" loading="lazy"
+          onmouseover="this.style.filter='none'" onmouseout="this.style.filter='grayscale(20%)'"/>
+        <span style="position:absolute;top:8px;left:8px;padding:3px 8px;font-size:10px;font-family:monospace;text-transform:uppercase;letter-spacing:.1em;background:#af101a;color:#fff;">
+          ${catLabels[p.cat]||p.cat}
+        </span>
+      </div>
+      <div style="padding:16px;">
+        <h3 style="font-weight:900;text-transform:uppercase;font-size:13px;color:#1a1c1c;margin-bottom:4px;line-height:1.3;">${p.name}</h3>
+        <p style="font-family:monospace;font-size:11px;margin-bottom:8px;color:#af101a;">${p.art}</p>
+        <p style="font-weight:700;font-size:18px;margin-bottom:2px;color:#af101a;">${p.price}</p>
+        <p style="font-size:12px;color:#4c616c;margin-bottom:12px;">${p.unit}</p>
+        <div style="height:3px;background:#e2e2e2;margin-bottom:4px;"><div style="height:100%;width:${p.stock}%;background:#af101a;"></div></div>
+        <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;display:flex;justify-content:space-between;color:#af101a;">
+          <span>ОСТАТОК ТОВАРА</span><span>${p.stock}%</span>
+        </p>
+        <button onclick="closeModal();openOrderPopup();" class="btn-cta w-full mt-4 py-3 text-xs">УЗНАТЬ ЦЕНУ</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ── Global search ── */
+function handleSearch(val) {
+  const dd = document.getElementById('search-dropdown');
+  if (val.length < 2) { dd.style.display = 'none'; return; }
+  const q = val.toLowerCase();
+  const res = products.filter(p => p.name.toLowerCase().includes(q) || p.art.toLowerCase().includes(q)).slice(0,8);
+  if (!res.length) { dd.style.display = 'none'; return; }
+  dd.innerHTML = res.map(p => `
+    <button class="search-result-item" onclick="selectSearchResult('${p.cat}','${p.name.replace(/'/g,"\\'")}')">
+      <span style="font-weight:700;color:#1a1c1c;">${p.name}</span>
+      <span style="color:#af101a;font-family:monospace;font-size:11px;">${p.art}</span>
+    </button>
+  `).join('');
+  dd.style.display = 'block';
+}
+function selectSearchResult(cat, name) {
+  document.getElementById('global-search').value = '';
+  document.getElementById('search-dropdown').style.display = 'none';
+  activeCat = cat;
+  openModal('catalog');
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('#global-search') && !e.target.closest('#search-dropdown')) {
+    document.getElementById('search-dropdown').style.display = 'none';
+  }
+});
+
+/* ── FAQ accordion ── */
+function setFaq(idx) {
+  document.querySelectorAll('#faq-accordion .h-acc-item').forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+  });
+}
+
+/* ── Stats counter ── */
+(function() {
+  const section = document.getElementById('stats-section');
+  if (!section) return;
+  let animated = false;
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !animated) {
+      animated = true;
+      observer.unobserve(section);
+      section.querySelectorAll('[data-target]').forEach(el => {
+        const target = parseInt(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        const dur = 1500;
+        const start = Date.now();
+        const run = () => {
+          const elapsed = Date.now() - start;
+          const p = Math.min(elapsed / dur, 1);
+          const ease = 1 - Math.pow(1 - p, 3);
+          const cur = Math.floor(ease * target);
+          if (target >= 10000 && p >= 1) el.textContent = '10 000+';
+          else el.textContent = cur.toLocaleString('ru') + suffix;
+          if (p < 1) requestAnimationFrame(run);
+        };
+        requestAnimationFrame(run);
+      });
+    }
+  }, { threshold: 0.3 });
+  observer.observe(section);
+})();
+
+/* ── Canvas animation ── */
+(function() {
+  const canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const colors = ['#9aa3b0','#c8d0dc','#7a8290','#6a727e'];
+  let particles = [];
+  let animId;
+
+  function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+
+  for (let i = 0; i < 50; i++) {
+    particles.push({
+      x: Math.random() * canvas.width, y: Math.random() * canvas.height,
+      size: 4 + Math.random() * 12,
+      speedX: 0.3 + Math.random() * 0.8, speedY: 0.2 + Math.random() * 0.6,
+      rotation: Math.random() * Math.PI * 2,
+      rotSpeed: (Math.random() - 0.5) * 0.02,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      type: Math.floor(Math.random() * 4)
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation);
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = 0.4;
+      if (p.type === 0) {
+        ctx.beginPath();
+        for (let j = 0; j < 6; j++) { const a = (Math.PI/3)*j; j===0?ctx.moveTo(Math.cos(a)*p.size,Math.sin(a)*p.size):ctx.lineTo(Math.cos(a)*p.size,Math.sin(a)*p.size); }
+        ctx.closePath(); ctx.fill();
+      } else if (p.type === 1) {
+        ctx.beginPath(); ctx.arc(0,0,p.size,0,Math.PI*2); ctx.fill();
+        ctx.globalCompositeOperation='destination-out'; ctx.beginPath(); ctx.arc(0,0,p.size*0.4,0,Math.PI*2); ctx.fill(); ctx.globalCompositeOperation='source-over';
+      } else if (p.type === 2) {
+        ctx.fillRect(-p.size*0.3,-p.size,p.size*0.6,p.size*2); ctx.beginPath(); ctx.arc(0,-p.size,p.size*0.5,0,Math.PI*2); ctx.fill();
+      } else {
+        ctx.fillRect(-p.size,-p.size,p.size*2,p.size*2);
+        ctx.globalCompositeOperation='destination-out'; ctx.beginPath(); ctx.arc(0,0,p.size*0.35,0,Math.PI*2); ctx.fill(); ctx.globalCompositeOperation='source-over';
+      }
+      ctx.restore();
+      p.x += p.speedX; p.y += p.speedY; p.rotation += p.rotSpeed;
+      if (p.x > canvas.width+20) p.x = -20;
+      if (p.y > canvas.height+20) p.y = -20;
+    });
+    animId = requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── Form handlers ── */
+function submitMainForm(e) {
+  e.preventDefault();
+  const ph = document.getElementById('mf-phone');
+  if (!ph.value.trim()) { document.getElementById('mf-phone-wrap').classList.add('error'); return; }
+  document.getElementById('main-form').style.display = 'none';
+  document.getElementById('mf-success').style.display = 'block';
+}
+function submitPopupForm(e) {
+  e.preventDefault();
+  const ph = document.getElementById('pp-phone');
+  if (!ph.value.trim()) { document.getElementById('pp-phone-wrap').classList.add('error'); return; }
+  document.getElementById('popup-form').style.display = 'none';
+  document.getElementById('popup-success').style.display = 'block';
+  setTimeout(closeOrderPopup, 3000);
+}
+function submitSimpleForm(e, prefix) {
+  e.preventDefault();
+  const ph = document.getElementById(prefix+'-phone');
+  if (!ph.value.trim()) { ph.style.borderBottomColor = '#af101a'; return; }
+  e.target.style.display = 'none';
+  document.getElementById(prefix+'-success').style.display = 'block';
+}
+
+/* ── Mobile menu ── */
+function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+function closeMobileMenu() { document.getElementById('mobile-menu').classList.add('hidden'); }
+
+/* ── CTA contact block border on desktop ── */
+(function() {
+  const block = document.getElementById('cta-contact-block');
+  if (block && window.innerWidth >= 1024) block.style.borderLeft = '2px solid #af101a';
+  window.addEventListener('resize', () => {
+    if (block) block.style.borderLeft = window.innerWidth >= 1024 ? '2px solid #af101a' : 'none';
+  });
+})();
+
+</script>
+</body>
+</html>
