@@ -806,9 +806,9 @@ tailwind.config = {
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
       <!-- Замените src на реальные файлы about-1.jpg, about-2.jpg, about-3.jpg -->
-      <img src="about-1.jpg" alt="Магазин крепежа" class="w-full object-cover" style="height:250px;" loading="lazy" onerror="this.style.background='#eeeeee';this.alt='Фото магазина'"/>
-      <img src="about-2.jpg" alt="Ассортимент крепежа" class="w-full object-cover" style="height:250px;" loading="lazy" onerror="this.style.background='#e2e2e2';this.alt='Ассортимент'"/>
-      <img src="about-3.jpg" alt="Торговый зал" class="w-full object-cover" style="height:250px;" loading="lazy" onerror="this.style.background='#d0d0d0';this.alt='Торговый зал'"/>
+      <img src="about-1.jpg" alt="Магазин крепежа" class="w-full object-cover cursor-pointer hover:brightness-110 transition-all duration-300 shadow-sm" style="height:250px;" loading="lazy" onclick="openImageViewer(this.src)" onerror="this.style.background='#eeeeee';this.alt='Фото магазина'"/>
+      <img src="about-2.jpg" alt="Ассортимент крепежа" class="w-full object-cover cursor-pointer hover:brightness-110 transition-all duration-300 shadow-sm" style="height:250px;" loading="lazy" onclick="openImageViewer(this.src)" onerror="this.style.background='#e2e2e2';this.alt='Ассортимент'"/>
+      <img src="about-3.jpg" alt="Торговый зал" class="w-full object-cover cursor-pointer hover:brightness-110 transition-all duration-300 shadow-sm" style="height:250px;" loading="lazy" onclick="openImageViewer(this.src)" onerror="this.style.background='#d0d0d0';this.alt='Торговый зал'"/>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="card-glass p-6 flex items-start gap-4" style="background:#f3f3f3;border-left:4px solid #af101a;"><span class="material-symbols-outlined text-2xl">bolt</span><p class="text-sm font-medium text-on-surface">Официальный дилер Tech-Krep, Abraflex, Himtex и ещё 8 брендов</p></div>
@@ -827,26 +827,45 @@ tailwind.config = {
     <button onclick="closeModal()"><span class="material-symbols-outlined text-3xl">close</span></button>
   </div>
   <div class="px-6 md:px-12 py-8 max-w-7xl mx-auto">
-    <h2 class="font-bold text-2xl md:text-3xl uppercase tracking-tighter mb-8" style="color:#1a1c1c;">УСЛОВИЯ <span style="color:#af101a;">ОПТОВЫХ ЗАКУПОК</span></h2>
-    <table class="w-table mb-12">
-      <thead><tr><th>Объём заказа</th><th>Скидка</th><th>Отсрочка</th><th>Менеджер</th></tr></thead>
-      <tbody>
-        <tr><td>от 5 000 руб.</td><td>3%</td><td>—</td><td>Общий</td></tr>
-        <tr><td>от 30 000 руб.</td><td>5%</td><td>до 14 дней</td><td>Персональный</td></tr>
-        <tr><td>от 100 000 руб.</td><td>7%</td><td>до 30 дней</td><td>Персональный + выезд</td></tr>
-      </tbody>
-    </table>
-    <div class="max-w-lg">
-      <h3 class="font-bold uppercase text-on-surface mb-4">Запросить коммерческое предложение</h3>
-      <form onsubmit="submitSimpleForm(event,'ws')" class="space-y-4">
-        <input type="text" placeholder="Иван" class="form-input" id="ws-name"/>
-        <div class="phone-input-wrapper"><select style="width:96px;flex-shrink:0;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 8px;font-size:13px;border-radius:0;outline:none;"><option>🇷🇺 +7</option><option>🇧🇾 +375</option><option>🇺🇦 +380</option></select><input type="tel" required placeholder="(___) ___-__-__" id="ws-phone" style="flex:1;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 16px;font-size:13px;border-radius:0;outline:none;font-family:inherit;"/></div>
-        <label class="flex items-start gap-3 text-xs" style="color:#4c616c;"><input type="checkbox" required class="mt-1" style="accent-color:#af101a;"/><span>Согласен на обработку персональных данных</span></label>
-        <button type="submit" class="btn-cta px-8 py-4 text-sm w-full">ПОЛУЧИТЬ КП</button>
-        <div id="ws-success" style="display:none;color:#af101a;font-weight:700;text-align:center;padding:16px 0;">Спасибо! Перезвоним в течение 15 минут.</div>
-      </form>
-      <div class="mt-6 text-sm text-secondary">
-        Оптовый отдел: <a href="mailto:ckc@krepsys.ru" class="underline" style="color:#af101a;">ckc@krepsys.ru</a> | <a href="tel:+78412968740" style="color:#af101a;">8 (8412) 96-87-40</a>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="font-bold text-2xl md:text-3xl uppercase tracking-tighter mb-8" style="color:#1a1c1c;">УСЛОВИЯ <span style="color:#af101a;">ОПТОВЫХ ЗАКУПОК</span></h2>
+        <table class="w-table mb-12">
+          <thead><tr><th>Объём заказа</th><th>Скидка</th><th>Отсрочка</th><th>Менеджер</th></tr></thead>
+          <tbody>
+            <tr><td>от 5 000 руб.</td><td>3%</td><td>—</td><td>Общий</td></tr>
+            <tr><td>от 30 000 руб.</td><td>5%</td><td>до 14 дней</td><td>Персональный</td></tr>
+            <tr><td>от 100 000 руб.</td><td>7%</td><td>до 30 дней</td><td>Персональный + выезд</td></tr>
+          </tbody>
+        </table>
+        
+        <div class="space-y-4 text-sm leading-relaxed text-secondary mb-8">
+          <p>Мы предлагаем гибкие условия для строительных компаний, производственных предприятий и розничных магазинов. Наша цель — стать вашим надежным партнером, обеспечивающим бесперебойные поставки качественного крепежа по честным ценам.</p>
+          <p>При заключении договора на постоянное обслуживание вы получаете приоритетную отгрузку, персонального менеджера и индивидуальный график платежей.</p>
+        </div>
+      </div>
+      
+      <div class="space-y-8">
+        <div class="relative group">
+          <img src="Болты.jpg" alt="Оптовые поставки крепежа" class="w-full h-auto shadow-xl border border-surface-container-highest cursor-pointer transition-all duration-300 group-hover:scale-[1.02]" onclick="openImageViewer(this.src)" onerror="this.src='https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&q=80'"/>
+          <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none"></div>
+        </div>
+
+        <div class="bg-white p-8 border-t-4 border-primary shadow-lg">
+          <h3 class="font-black uppercase text-on-surface mb-6 text-lg tracking-tight">Запросить коммерческое предложение</h3>
+          <form onsubmit="submitSimpleForm(event,'ws')" class="space-y-4">
+            <input type="text" placeholder="Иван" class="form-input" id="ws-name"/>
+            <div class="phone-input-wrapper"><select style="width:96px;flex-shrink:0;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 8px;font-size:13px;border-radius:0;outline:none;"><option>🇷🇺 +7</option><option>🇧🇾 +375</option><option>🇺🇦 +380</option></select><input type="tel" required placeholder="(___) ___-__-__" id="ws-phone" style="flex:1;border:none;border-bottom:2px solid #4c616c;background:#eeeeee;padding:12px 16px;font-size:13px;border-radius:0;outline:none;font-family:inherit;"/></div>
+            <label class="flex items-start gap-3 text-xs" style="color:#4c616c;"><input type="checkbox" required class="mt-1" style="accent-color:#af101a;"/><span>Согласен на обработку персональных данных</span></label>
+            <button type="submit" class="btn-cta px-8 py-4 text-sm w-full">ПОЛУЧИТЬ КП</button>
+            <div id="ws-success" style="display:none;color:#af101a;font-weight:700;text-align:center;padding:16px 0;">Спасибо! Перезвоним в течение 15 минут.</div>
+          </form>
+          <div class="mt-8 pt-6 border-t border-surface-container-highest text-sm text-secondary">
+            Оптовый отдел: <br/>
+            <a href="mailto:ckc@krepsys.ru" class="font-bold hover:underline" style="color:#af101a;">ckc@krepsys.ru</a> <br/>
+            <a href="tel:+78412968740" class="font-bold" style="color:#af101a;">8 (8412) 96-87-40</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
